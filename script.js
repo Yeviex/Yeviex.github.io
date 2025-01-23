@@ -8,8 +8,7 @@
 // Model URL from Teachable Machine
 //**************************************************
 //* as before, paste your lnk below
-let URL = "https://teachablemachine.withgoogle.com/models/op_6rXskt/
-";
+let URL = "https://teachablemachine.withgoogle.com/models/op_6rXskt/";
 
 
 
@@ -114,7 +113,7 @@ function checkPose(prediction, video) {
         };
     }
 
-    if (prob > 0.5 && !explosionActive) {
+if (prob > 0.5 && !explosionActive) {
         const poseState = poseStates[`pose${poseNumber}`];
 
         switch(poseNumber) {
@@ -146,6 +145,7 @@ function checkPose(prediction, video) {
         }
     }
 }
+
 
 function triggerExplosion(poseState) {
     explosionActive = true;
